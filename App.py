@@ -6,7 +6,7 @@ import tensorflow as tf
 
 st.set_page_config(page_title="MineralScope: AI Geologist", page_icon="💎", initial_sidebar_state="collapsed")
 
-pages = ["Home", "Analyze", "MAP", "About"]
+pages = ["Home", "Analyze", "Map", "About"]
 parent_dir = os.path.dirname(os.path.abspath(__file__))
 logo_path = os.path.join(parent_dir, "resources", "gambar" ,"logo.svg")
 urls = {}
@@ -59,7 +59,7 @@ if not page:
 functions = {
     "Home": pg.show_home,
     "Analyze": pg.show_analyze,
-    "MAP": pg.show_map,
+    "Map": pg.show_map,
     "About":pg.show_about,
 }
 
